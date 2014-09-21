@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mike Rusczyk /  Lightweight Responsive CSS Framework</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Mike Rusczyk, Office Of Fine Art and GOOD Deign" />	
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="stylesheet" type="text/css" media="all" href="../code/dependent-css.css" />
+
+		<style>
+		/* Example page styles / discard */
+		body {
+			color: #2e2d2d;
+			background-color: #f5f5f5;
+			font-size: 14px;
+			font-weight: 300;
+			padding: 30px 0;
+			font-family: "helvetica neue", sans-serif;
+		}
+		
+		h1 {
+			text-transform: uppercase;
+			margin: 0 30px 20px;
+		}
+		
+		h2 {
+			text-transform: uppercase;
+			margin: 0 0 10px;
+		}
+		
+		.column-container {
+			line-height: 1.8;
+			overflow: hidden;
+			margin: 0 20px;
+		}
+		
+			.column-container img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			
+				.column-container img + h2 {
+					margin: 10px 0;
+				}
+		
+			.column-container .item {
+				min-height: 300px;
+				background-color: #fff;
+				padding: 15px;
+				-webkit-box-shadow: 0 0 4px 0 rgba(0,0,0, .1);
+				-moz-box-shadow: 0 0 4px 0 rgba(0,0,0, .1);
+				box-shadow: 0 0 4px 0 rgba(0,0,0, .1);
+			}
+			
+			.column-container p {
+				margin: 0 0 1.3em;
+			}
+			
+			@media only screen and (max-width: 760px) { /* ----- tablet and below ----- */
+
+				.column-container .item {
+					min-height: 50px;
+				}
+
+			}		
+		</style>
+
+	</head>
+	
+	<body>
+		<h1>Example markup</h1>
+		
+		<!-- One column example -->
+		<div class="column-container column-1">
+			<div class="item">
+				<img src="images/example-image-1.png" alt="example" />
+				<h2>Single column layout</h2>	
+				<p>
+				i'm dreaming and so it must be true nothing else could look as good as you do and so in a rocket go up to where the astros flow into space don't hold me down <br />
+
+				atom eyes, don't worry your brain take a break from everyday sell the house, the car, the pain (just be sure to live again) atom eyes<br />
+
+				i'm running away from your clues atomizer sprinklers are spraying perfume escape a lobotomy there's a million heartstrings ready to fly let's pull them now<br />
+
+				atom eyes, don't worry your brain take a break from everyday sell the house, the car, the pain (just be sure to live again) atom eyes<br />
+
+				atom eyes, don't worry your brain take a break from everyday sell the house, the car, the pain (just be sure to live again)atom eyes
+				</p>
+			</div>
+		</div>
+
+
+		<!-- Two column example -->
+		<div class="column-container column-2">
+			<div class="item">
+				<img src="images/example-image-2.png" alt="example" />
+				<h2>Two columns layout</h2>	
+			</div>	
+
+			<div class="item">
+				<img src="images/example-image-2.png" alt="example" />
+				<h2>Two columns layout</h2>	
+			</div>
+		</div>	
+				
+		
+		<!-- Three column example -->
+		<div class="column-container column-3">
+			<div class="item">
+				<h2>Three columns layout</h2>	
+				<p>roll out the pain killers 
+				we'll have a killer wig-out 
+				sleepy boys don't look - it's not in the gazette
+				or a statistical ocurrence 
+				it's octopus caveman 
+				drinking with the enemy 
+				he's got a girl on every arm
+
+				he sits down and circulates 
+				in the office of hearts 
+				he's case-closed middleman 
+				in the office of hearts 
+				he'll steal you away
+
+				he sits down and circulates
+				come feel the softest parts
+				in the office of hearts
+
+				sit down and circulate!
+				come feel the softest parts 
+				in the office of hearts
+
+				sit down and circulate!
+				come feel the softest parts 
+				in the office of hearts</p>
+			</div>
+			
+			<div class="item">
+				<h2>Three columns layout</h2>	
+				<p>don't open life alone 
+				contact the empire solutionaries 
+				they cut the skin - they peel back the onion 
+				reveal the ghostblood
+				fat black gas exudes
+				moves into the mirrored hall of empty values
+
+				canned sister Iowa
+				drive me to the changing room 
+				where the counterfeit meets
+				and brings it's collection of orphans
+
+				leave them in the state grip
+				the nurses hate them 
+				but it's up to you and me, my faithful sin-eater
+				to give them a glorious lightbath
+				and remove their wrapping
+				their burning flag birthday suit</p>
+			</div>
+			
+			<div class="item">
+				<h2>Three columns layout</h2>	
+				<p>time to say to you my child 
+				your name is wild
+				and if you called me in 
+				to change the color 
+				your name is wild
+				and i'll be taking you soon now
+				to read the orange signs 
+				and i say now to you so what
+				the useless fade in time
+				you chose me to read you no lies 
+				hooray for the day
+				and i'll pay the angels to keep you, my child 
+				you are safer now
+				god knows it too</p>
+			</div>
+		</div>
+
+		
+		<!-- Four column example -->
+		<div class="column-container column-4">
+			<div class="item">
+				<img src="images/example-image-1.png" alt="example" />	
+				<h2>Four columns</h2>	
+			</div>	
+
+			<div class="item">
+				<img src="images/example-image-1.png" alt="example" />	
+				<h2>Four columns</h2>	
+			</div>
+
+			<div class="item">
+				<img src="images/example-image-1.png" alt="example" />	
+				<h2>Four columns</h2>	
+			</div>
+
+			<div class="item">
+				<img src="images/example-image-1.png" alt="example" />	
+				<h2>Four columns</h2>	
+			</div>
+		</div>
+	
+		
+		<!-- Two column anchor right example -->
+		<div class="column-container column-2 anchor-right">
+			<div class="item">
+				<img src="images/example-image-1.png" alt="example" />	
+			</div>	
+
+			<div class="item">
+				<h2>Two columns anchor right</h2>	
+				<p>Jane of the waking universe! 
+				A wrinkled rose snapped back 
+				And the flies on flowers spreading out 
+				To all sickness of humanity 
+				Listen to our queen as she is offering free samples 
+				Of her lovely garden spoils 
+				Jane of the waking universe 
+				And undulating always like the tide 
+				The devil's bride is calling all toward her skirt 
+				And in the loving folds there we will hide inside 
+				From any would be sneak attack 
+				Until it's safe to journey back 
+				Jane of waking universe
+				</p>						
+			</div>
+		</div>
+
+
+		<!-- Two column anchor left example -->
+		<div class="column-container column-2 anchor-left">
+			<div class="item">
+				<h2>Two columns anchor left</h2>
+				<p>Near a distant sea 
+				Her clear yellow eyes 
+				Are opening to pink and black skies 
+				And soon they are blinking 
+				With compound camera eyes 
+				Are you faster 
+				Than the eyes of the car-people? 
+				Styled in silver 
+				Are you able to roam 
+				Faster then the lighthouse keeper credits you?
+				</p>
+			</div>
+			
+			<div class="item">
+				<img src="images/example-image-1.png" alt="example" />	
+			</div>
+		</div>	
+		
+		
+	</body>
+</html>		
