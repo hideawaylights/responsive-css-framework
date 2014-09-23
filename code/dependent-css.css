@@ -10,7 +10,6 @@ Author: Mike Rusczyk / mike@ofad.org / http://hideawaylights.com/mike-rusczyk/
 
 .column-container {
 	overflow: hidden;
-	margin: 0 1.2195121951219513%;
 }
 		
 /* ----- columns ----- */		
@@ -41,28 +40,51 @@ Author: Mike Rusczyk / mike@ofad.org / http://hideawaylights.com/mike-rusczyk/
 			width: 30.89430894308943%;
 		}
 
-		.column-container.column-1 .item {
-			width: auto;
-			float: none;
-		}			
+	.column-container.column-1 .item {
+		width: auto;
+		float: none;
+	}			
 
-		.column-container.column-2 .item {
-			width: 47.560975609756095%;
-		}
-
-		.column-container.column-3 .item {
-			width: 30.89430894308943%;
-		}
-
-		.column-container.column-4 .item {
-			width: 22.560975609756098%;
-		}
-			
-@media only screen and (max-width: 760px) { /* ----- tablet and below ----- */
-	
-	.column-container .item {
-		float: none !important;
-		width: auto !important; 
+	.column-container.column-2 .item {
+		width: 47.560975609756095%;
 	}
+
+	.column-container.column-3 .item {
+		width: 30.89430894308943%;
+	}
+
+	.column-container.column-4 .item {
+		width: 22.560975609756098%;
+	}
+			
+@media only screen and (max-width: 768px) { /* ----- tablets and below ----- */
+	
+		.column-container.column-2.anchor-left .item, .column-container.column-2.anchor-right .item {
+			float: none !important;
+			width: auto !important; 
+		}
+	
+		.column-container.column-3 .item {
+			float: none;
+			width: auto; 
+		}
+	
+		.column-container.column-4 .item {
+			float: none;
+			width: auto; 
+		}
+
+}
+
+@media only screen and (max-width: 480px) { /* ----- small devices ----- */
+	
+	.column-container {
+		padding: 0 1.2195121951219513%;
+	}
+	
+		.column-container .item {
+			float: none !important;
+			width: auto !important; 
+		}
 
 }	
