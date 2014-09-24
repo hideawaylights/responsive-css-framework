@@ -6,85 +6,112 @@ Author: Mike Rusczyk / mike@ofad.org / http://hideawaylights.com/mike-rusczyk/
 * { /* optional reset / remove if you like */
 	margin: 0;
 	padding: 0;
-}
+	}
 
 .column-container {
 	overflow: hidden;
-}
+	}
 		
 /* ----- columns ----- */		
 	
 	.column-container .item {
 		float: left;
-		margin: 1.2195121951219513%;
+		margin: 0 0 2.5% 2.5%;
+		
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 		box-sizing: border-box;         /* Opera/IE 8+ */
-	}
+		}
+	
+		.column-container .item:first-child {
+			margin-left: 0;
+			}
 		
 	.column-container.column-2.anchor-left .item {
-		float: right;
-		width: 64.22764227642277%;
-	}	
+		width: 65.83333333333333%;
+		}	
 		
 		.column-container.column-2.anchor-left .item:first-child {
-			float: right;
-			width: 30.89430894308943%;
-		}
+			width:  31.666666666666665%;
+			}
 			
 	.column-container.column-2.anchor-right .item {
-		width: 64.22764227642277%;
-	}			
+		width: 65.83333333333333%;
+		}			
 	
-		.column-container.column-2.anchor-right .item:first-child {
-			width: 30.89430894308943%;
-		}
+		.column-container.column-2.anchor-right .item:last-child {
+			width:  31.666666666666665%;
+			}
 
 	.column-container.column-1 .item {
 		width: auto;
 		float: none;
-	}			
+		}			
 
 	.column-container.column-2 .item {
-		width: 47.560975609756095%;
-	}
+		width: 48.75%;
+		}
+		
+		.column-container.column-2 .item:nth-child(2n+1) {
+			clear: both;
+			margin-left: 0;
+			}
 
 	.column-container.column-3 .item {
-		width: 30.89430894308943%;
-	}
+		width: 31.666666666666665%;
+		}
+		
+		.column-container.column-3 .item:nth-child(3n+1) {
+			clear: both;
+			margin-left: 0;
+			}
 
 	.column-container.column-4 .item {
-		width: 22.560975609756098%;
-	}
+		width: 	23.125%;
+		}
+		
+		.column-container.column-4 .item:nth-child(4n+1) {
+			clear: both;
+			margin-left: 0;
+			}
+	
+	.column-container.column-6 .item {
+		width: 	14.583333333333334%;
+		}
+
+		.column-container.column-6 .item:nth-child(6n+1) {
+			clear: both;
+			margin-left: 0;
+			}
 			
 @media only screen and (max-width: 768px) { /* ----- tablets and below ----- */
 	
 		.column-container.column-2.anchor-left .item, .column-container.column-2.anchor-right .item {
 			float: none !important;
 			width: auto !important; 
-		}
-	
-		.column-container.column-3 .item {
-			float: none;
-			width: auto; 
-		}
+			margin-left: 0;
+			}
 	
 		.column-container.column-4 .item {
 			float: none;
 			width: auto; 
-		}
+			margin-left: 0;
+			}
+			
+		.column-container.column-6 .item {
+			float: none;
+			width: auto; 
+			margin-left: 0;
+			}	
 
 }
 
 @media only screen and (max-width: 480px) { /* ----- small devices ----- */
 	
-	.column-container {
-		padding: 0 1.2195121951219513%;
-	}
-	
-		.column-container .item {
+		.column-container .item {			
 			float: none !important;
 			width: auto !important; 
-		}
+			margin-left: 0 !important;
+			}
 
-}	
+}

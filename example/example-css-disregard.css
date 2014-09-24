@@ -5,16 +5,13 @@ Author: Mike Rusczyk / mike@ofad.org / http://hideawaylights.com/mike-rusczyk/
 
 /* Example page styles / discard, not relavent to framework */
 
-html {
-	background-color: #f5f5f5;
-}
-
 body {
 	color: #2e2d2d;
+	background-color: #f5f5f5;
 	font-size: 14px;
 	font-weight: 300;	
 	font-family: "helvetica neue", sans-serif;
-}
+	}
 
 a {
 	color: #333;
@@ -25,46 +22,47 @@ a {
    	-o-transition: all 200ms ease;
    	-moz-transition: all 200ms ease;
    	-webkit-transition: all 200ms ease;
-}
+	}
 
 	a:hover {
 		color: #e24b37;
 		border-color: #fbe4e0;
-	}
+		}
 	
 footer {
-	margin: 20px 1.2195121951219513%;
+	margin: 20px 0;
 	padding-top: 20px;
 	border-top: 1px solid rgba(0,0,0, .1);
-}	
+	}	
 
 h1 {
 	text-transform: uppercase;
-}
+	}
 
 h2 {
 	text-transform: uppercase;
 	margin: 0 0 10px;
-}
+	}
 
 h3 {
 	text-transform: uppercase;
 	display: inline-block;
 	font-size: 14px;
 	font-weight: normal;
-}
+	}
 
 header {
 	overflow: hidden;
 	font-size: 12px;
-	margin: 0 1.2195121951219513% 20px;
+	margin: 0 0 20px;
 	padding-bottom: 48px;
 	position: relative;
 	border-bottom: 1px solid rgba(0,0,0, .1);
-}
+	}
+	
 	header div {
 		padding-top: 18px;
-	}
+		}
 
 	header li {
 		display: inline-block;
@@ -81,7 +79,7 @@ header {
 	
 		border-radius: 2px;
 		-moz-border-radius: 2px;
-	}
+		}
 	
 		header li:first-child {
 			margin: 0;
@@ -91,12 +89,12 @@ header {
 			color: #fff;
 			border-color: #777;
 			background-color: #777;
-		}
+			}
 
 		header li.active small {
 			font-size: 12px;
 			opacity: 1.0;
-		}
+			}
 
 		header li small {
 			cursor: text;
@@ -106,45 +104,45 @@ header {
 			left: 0;
 			position: absolute;
 			opacity: .0;
-		}
+			}
 		
 	header i {
 		font-style: normal;
 		font-weight: bold;
 		text-transform: uppercase;
-	}
+		}
 
 	header ul {
 		display: inline;
-	}
+		}
 
 .column-container {
 	line-height: 1.8;
 	overflow: hidden;
-}
+	}
 
 	.column-container img {
 		width: 100%;
 		height: auto;
 		display: block;
-	}
+		}
 	
 		.column-container img + h2 {
 			margin: 10px 0;
-		}
+			}
 
 	.column-container .item {
-		min-height: 250px;
+		min-height: 100px;
 		background-color: #fff;
 		padding: 15px;
-		-webkit-box-shadow: 0 0 4px 0 rgba(0,0,0, .1);
-		-moz-box-shadow: 0 0 4px 0 rgba(0,0,0, .1);
-		box-shadow: 0 0 4px 0 rgba(0,0,0, .1);
-	}
+		-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0, .2);
+		-moz-box-shadow: 0 0 5px 0 rgba(0,0,0, .2);
+		box-shadow: 0 0 5px 0 rgba(0,0,0, .2);
+		}
 	
 	.column-container p {
 		margin: 0 0 1.3em;
-	}
+		}
 	
 /* --- toggle default widths --- */
 
@@ -154,59 +152,68 @@ header {
    	-o-transition: all 300ms ease;
    	-moz-transition: all 300ms ease;
    	-webkit-transition: all 300ms ease;
-}	
+	}	
  
 #main-container.example-default {
-	width: 984px;
-	max-width: 984px;
+	width: 960px;
+	max-width: 960px;
+	padding: 30px 20px;
 	margin: 0 auto;
-}
+	}
 
 #main-container.example-fluid {
-	padding: 30px 1.2195121951219513%;
-}
+	padding: 30px 0;
+	width: 95%;
+	margin: 0 auto;
+	}
 
 #main-container.example-large-screen {
-	width: 1476px;
-	max-width: 1476px;
+	width: 1440px;
+	max-width: 1440px;
+	padding: 30px 20px;
 	margin: 0 auto;
-}
+	}
 
 #main-container.example-small-device {
-	width: 492px;
-	max-width: 492px;
+	width: 480px;
+	max-width: 480px;
+	padding: 30px 20px;
 	margin: 0 auto;
-}
+	}
 
 	#main-container.example-small-device .column-container .item {
 		float: none !important;
 		width: auto !important; 
+		margin-left: 0 !important;
 		}
 
 #main-container.example-tablet {
-	width: 787px;
-	max-width: 787px;
+	width: 768px;
+	max-width: 768px;
 	margin: 0 auto;
-}
+	}
 
 		#main-container.example-tablet .column-container.column-2.anchor-left .item, #main-container.example-tablet .column-container.column-2.anchor-right .item {
 			float: none !important;
 			width: auto !important;
-		}
-		
-		#main-container.example-tablet .column-container.column-3 .item {
-			width: auto; 
-		}
+			margin-left: 0;
+			}
 
 		#main-container.example-tablet .column-container.column-4 .item {
 			width: auto; 
-		}
+			margin-left: 0;
+			}
+			
+		#main-container.example-tablet .column-container.column-6 .item {
+			width: auto; 
+			margin-left: 0;
+			}	
 
 @media only screen and (max-width: 768px) { /* ----- tablet and below ----- */
 
 		.column-container .item {
 	        min-height: 50px;
-		}
+			}
 
 }
 
@@ -214,10 +221,10 @@ header {
 	
 	h3 {
 		display: none;
-	}
+		}
 	
 	#main-container.example-fluid {
 		padding: 30px 0;
-	}
+		}
 
 }
