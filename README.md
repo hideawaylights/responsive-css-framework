@@ -1,4 +1,4 @@
 responsive-css-framework
 ========================
 
-Light weight CSS framework for responsive column layout
+Lightweight CSS framework for responsive column layout
