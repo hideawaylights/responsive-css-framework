@@ -8,9 +8,11 @@ Author: Mike Rusczyk / mike@ofad.org / http://hideawaylights.com/mike-rusczyk/
 	padding: 0;
 	}
 
-.column-container {
-	overflow: hidden;
-	}
+	.column-container:after {
+		content:'';
+	    display:block;
+	    clear: both;
+		}
 		
 /* ----- columns ----- */		
 	
@@ -36,11 +38,14 @@ Author: Mike Rusczyk / mike@ofad.org / http://hideawaylights.com/mike-rusczyk/
 			}
 			
 	.column-container.column-2.anchor-right .item {
+		margin-left: 0;
 		width: 65.83333333333333%;
 		}			
 	
-		.column-container.column-2.anchor-right .item:last-child {
-			width:  31.666666666666665%;
+		.column-container.column-2.anchor-right .item:first-child {
+			float: right;
+			margin-left: 2.5%;
+			width: 31.666666666666665%;
 			}
 
 	.column-container.column-1 .item {
@@ -89,7 +94,7 @@ Author: Mike Rusczyk / mike@ofad.org / http://hideawaylights.com/mike-rusczyk/
 		.column-container.column-2.anchor-left .item, .column-container.column-2.anchor-right .item {
 			float: none !important;
 			width: auto !important; 
-			margin-left: 0;
+			margin-left: 0 !important;
 			}
 	
 		.column-container.column-4 .item {
